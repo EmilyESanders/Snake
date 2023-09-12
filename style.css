@@ -3,6 +3,7 @@
     height: 400px;
     margin: 0 auto;
     background-color: #eee;
+    border: 2px solid black;
 }
 
 h2 {
@@ -15,4 +16,29 @@ h4 {
     text-align: center;
     font-family: Arial;
     font-size: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+p.ex1{
+    font-size: 20px;
+}
+
+#highScores {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    box-sizing: border-box;
+    /* overflow-y: scroll; */
+}
+
+#highScoresList {
+list-style-type: none;
+padding: 0;
 }
