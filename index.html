@@ -4,20 +4,29 @@
         <title>Snake</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+    <header>
+        <p>Snake!</p>
+        <p>Click inside the box to begin:</p>
+    </header>
     <body>
-        <h2>Snake!</h2>
-        <h4>Click inside the box to begin:</h4>
+        <div id="container">
+            <div id="controlsContainer">
+                <p><b><u>Controls</u>:</b></p>
+                <p><b>Left: </b>←&emsp;<b>Up: </b>↑</p>
+            
+                <p><b>Right: </b>→&emsp;<b>Down: </b>↓</p>
+                <p><b>Pause: </b>Space</p>
+            </div>
         <div id="game">
             <canvas id="snake" tabindex="1" style="border: 2px solid black;"></canvas>
             <script src="script.js"></script>
         </div>
-        <p><b><u>Controls</u>:</b></p>
-        <p><b>Left: </b>←&emsp;<b>Up: </b>↑</p>
+        <div id="highScoresContainer">
+            <p><b><u>High Scores:</u></b></p>
+            <ol id="highScoresList"></ol>
+        </div>
 
-        <p><b>Right: </b>→&emsp;<b>Down: </b>↓</p>
-        <p><b>Pause: </b>Space</p>
-
-        <ol id="highScoresList"></ol>
-
+    </div>
+    
     </body>
 </html>
