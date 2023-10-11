@@ -49,8 +49,9 @@ function moveSnake() {
 }
 
 function drawSnake() {
+    canvas.style.backgroundColor = "red";
     canvas2d.clearRect(0, 0, canvas.width, canvas.height);
-    canvas2d.fillStyle = "black";
+    canvas2d.fillStyle = "blue";
     for (var i = 0; i < snakeSegments.length; i++){
         canvas2d.fillRect(snakeSegments[i].x, snakeSegments[i].y, 10, 10);
     }
@@ -114,7 +115,7 @@ function spawnDots() {
         dots.push({ x: dotX, y: dotY });
     }
     for (var i = 0; i < dots.length; i++){
-        canvas2d.fillStyle = "red";
+        canvas2d.fillStyle = "blue";
         canvas2d.fillRect(dots[i].x, dots[i].y, 10, 10);
     }
 }

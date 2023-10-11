@@ -10,6 +10,19 @@
     </header>
     <body>
         <div id="container">
+
+    <!-- Color Mode Options -->
+    <div>
+        <label for="color-modes">Select Color Theme:</label>
+        <select id="color-modes">
+            <option value="classic-mode">Classic Mode</option>
+            <option value="dark-mode">Dark Mode</option>
+            <option value="primary-color-mode">Primary Color Mode</option>
+            <option value="dreamy-mode">Dreamy Mode</option>
+            <option value="forest-mode">Forest Mode</option>
+        </select>
+    </div>
+
             <div id="controlsContainer">
                 <p><b><u>Controls</u>:</b></p>
                 <p><b>Left: </b>←&emsp;<b>Up: </b>↑</p>
@@ -18,8 +31,8 @@
                 <p><b>Pause: </b>Space</p>
             </div>
         <div id="game">
-            <canvas id="snake" tabindex="1" style="border: 2px solid black;"></canvas>
-            <script src="script.js"></script>
+            <canvas id="snake" tabindex="1" style="border: 2px solid;"></canvas>
+            
         </div>
         <div id="highScoresContainer">
             <p><b><u>High Scores:</u></b></p>
@@ -27,6 +40,10 @@
         </div>
 
     </div>
+
+    <script src="controller.js">
+
+    </script>
     
     </body>
 </html>
