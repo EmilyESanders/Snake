@@ -1,4 +1,13 @@
+// colorModes.addEventListener("change", function () {
+//     if (colorModes.value === "dark-mode") {
+//         document.body.classList.add("dark-mode");
+//     } else {
+//         document.body.classList.remove("dark-mode");
+//     }
+// });
+
 var canvas = document.getElementById("snake");
+canvas.style.borderColor = "teal";
 var canvas2d = canvas.getContext("2d");
 
 var gameEnded = false;
@@ -40,6 +49,7 @@ canvas.addEventListener("click", function(){
 });
 
 function moveSnake() {
+
     snakeSegments.unshift({ x: snakeX, y: snakeY });
     snakeX += directionX;
     snakeY += directionY;
@@ -49,8 +59,13 @@ function moveSnake() {
 }
 
 function drawSnake() {
+    // canvas.style.borderStyle = "5px solid";
+    canvas.style.borderColor = "teal";
+
+
     canvas.style.backgroundColor = "black";
     canvas2d.clearRect(0, 0, canvas.width, canvas.height);
+    canvas.style.borderColor = "teal";
     canvas2d.fillStyle = "white";
     for (var i = 0; i < snakeSegments.length; i++){
         canvas2d.fillRect(snakeSegments[i].x, snakeSegments[i].y, 10, 10);
@@ -72,9 +87,11 @@ function gameLoop() {
         setTimeout(gameLoop, 100);
     }
 }
+canvas.style.borderColor = "teal";
 gameLoop();
 
 document.onkeydown = function(event){
+    canvas.style.borderColor = "teal";
     switch (event.keyCode){
         case 37:
             if(directionX !== 10){

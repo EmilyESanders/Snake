@@ -3,7 +3,7 @@
     height: 400px;
     margin: 20px auto;
     /* background-color: #eee; */
-    /* border: 2px solid black; */
+    outline: 2px solid;
     position: relative;
     text-align: center;
     margin-left: 20px;
@@ -12,6 +12,7 @@
 
 #container {
     display: flex; 
+    /* border: 2px solid; */
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
@@ -67,6 +68,7 @@ header h2, header h4 {
     margin: 0;
     display: inline-block;
 }
+
 
 p {
     text-align: center;
@@ -139,7 +141,7 @@ h5 {
 .dark-mode #game {
     background-color: #121212;
     color: white;
-    border: 2px solid navy;
+    border: 2px solid teal;
 
 }
 
@@ -159,11 +161,29 @@ h5 {
 
 }
 
+.dreamy-mode #highScoresContainer{
+    background-color: pink;
+}
+
 /* Forest color mode styling */
-.forest-mode #game {
+/* .forest-mode #game {
     background-color: rgba(179, 128, 128, 0.757);
     color: rgb(10, 49, 10);
     border: 2px rgb(4, 43, 4);
 
 }
 
+
+#forest-mode-canvas{
+    background-color: brown;
+    border-color: yellow;
+} */
+
+/* .forest-mode select{
+    background-color: teal;
+    border: 5px solid yellow;
+}
+
+body.dark-mode {
+    background-color: teal; !important;
+} */
